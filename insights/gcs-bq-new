@@ -1,0 +1,1 @@
+bq load --source_format=DATASTORE_BACKUP esce.april gs://dsdump/2019-04-14T17:16:26_61170/default_namespace/kind_041319survey/default_namespace_kind_041319survey.export_metadata

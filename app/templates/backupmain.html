@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<h1>Tredence Employee Survey</h1>
+<form action='/survey' method='POST'>
+    <ol>
+        <h3>Input Employee ID</h3>
+        <input name="empid" type="text">
+        <h3>Survey</h3>
+        {% for question in questions %}
+            <li><u>{{ question }}</u></li>
+            {% for answer in questions[question] %}
+                <input type='radio' value='{{  answer  }}' name='{{question}}' />{{  answer  }}
+            {% endfor %}
+        {% endfor %}
+    </ol>
+    <input type="submit" value="submit survey" />
+</form>
+</html>

@@ -1,0 +1,9 @@
+runtime: python37
+
+service: "ESCE"
+
+#default entrypoint is gunicorn
+entrypoint: gunicorn -b $PORT main.app
+
+#Instance class is for compute scaling. F set as auto scale
+instance_class: F1

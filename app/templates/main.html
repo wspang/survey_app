@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<h1>{{ surveyName }}</h1>
+<body bgcolor="AFEEEE">
+<form action='/survey' method='POST' bgcolor="F5F5F5">
+    <ol>
+        <h3>Input Employee ID</h3>
+        <input name="empid" type="text">
+        <h3>Survey</h3>
+        {% for question in questions %}
+            <li><u>{{ question }}?</u></li>
+            {% for answer in questions[question] %}
+                <input type='radio' value='{{  answer  }}' name='{{question}}' />{{  answer  }}
+            {% endfor %}
+        {% endfor %}
+        <h4>Any other feedback? Type Below</h4>
+        <input name="closing" type="text">
+    </ol>
+    <input type="submit" value="submit survey" />
+</form>
+</body>
+</html>

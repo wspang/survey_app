@@ -1,0 +1,1 @@
+gcloud datastore export --kinds="041319survey" --namespaces="(default)" gs://dsdump
