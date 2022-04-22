@@ -6,7 +6,7 @@ yagmail==0.11.215
 keyring==19.0.1
 pandas==0.24.2
 matplotlib==3.0.3
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 google-cloud-bigquery
 google-cloud-storage
 tempfile
